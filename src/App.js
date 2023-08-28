@@ -1,7 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import axios from "axios";
 
-function App() {
+function App(props) {
+  function displayWeather(response) {
+    alert(`temperature in ${props.city} is ${response.data.main.temp}`);
+  }
+
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=5b9aaac066641215de6d72f73af7e9b5&units=metric`;
+  axios.get(apiUrl).then(displayWeather);
+  console.log(apiUrl);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -21,5 +30,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
