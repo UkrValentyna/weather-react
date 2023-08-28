@@ -90,7 +90,7 @@ img {
   box-shadow: 5px 10px 10px #f1ecec;
   border-radius: 5px;
 }
-.forecast-container {
+.forecast {
   margin-top: 50px;
   text-align: center;
   box-shadow: 5px 10px 10px #f1ecec;
@@ -114,8 +114,5 @@ img {
   }
   .weather-app {
     max-width: 500px;
-  }
-  .input-submit.SearchForm {
-    margin: 30px;
   }
 }

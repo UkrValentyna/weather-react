@@ -1,5 +1,58 @@
 import React from "react";
 
 export default function Forecast() {
-  return <div className="forecast-container">Will be Forecast</div>;
+  return (
+    <span className="Forecast">
+      <div className="row">
+        <div className="col-sm-2">
+          Mon
+          <br>
+            <img src="" alt="cloudy" />
+            Cloudy
+          </br>
+          <strong>14°/ 6°</strong>
+        </div>
+        <div className="col-sm-2">
+          Tue
+          <br>
+            <img src="" alt="cloudy" />
+            Cloudy
+          </br>
+          <strong>14°/ 6°</strong>
+        </div>
+      </div>
+      <div className="col-sm-2">
+        Wen
+        <br>
+          <img src="" alt="cloudy" />
+          Cloudy
+        </br>
+        <strong>14°/ 6°</strong>
+      </div>
+      <div className="col-sm-2">
+        Thu
+        <br>
+          <img src="" alt="cloudy" />
+          Cloudy
+        </br>
+        <strong>14°/ 6°</strong>
+      </div>
+      <div className="col-sm-2">
+        Fri
+        <br>
+          <img src="" alt="cloudy" />
+          Cloudy
+        </br>
+        <strong>14°/ 6°</strong>
+      </div>
+      <div className="col-sm-2">
+        Sut
+        <br>
+          <img src="" alt="cloudy" />
+          Cloudy
+        </br>
+        <strong>14°/ 6°</strong>
+      </div>
+    </span>
+  );
 }
