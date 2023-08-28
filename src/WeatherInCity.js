@@ -12,7 +12,7 @@ export default function WeatherInCity() {
   };
 
   return (
-    <div className="WeatherInCity">
+    <div className="WeatherInCity weather-app">
       <div className="weather-app">
         <div className="row">
           <div className="col-sm-6">

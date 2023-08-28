@@ -3,10 +3,10 @@ ul {
   list-style: none;
   color: rgb(135, 135, 135);
   font-size: 16px;
+  padding-left: 0;
 }
 h1 {
   margin-top: 20px;
-  padding-left: 35px;
   color: #272142;
   font-size: 48px;
   font-weight: 700;
@@ -17,20 +17,19 @@ img {
   max-width: 80px;
 }
 
-.footer {
+.Footer {
   text-align: center;
   font-size: 12px;
   margin-top: 20px;
 }
 
 .temperature-container {
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
 .weather-app {
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   color: #878787;
   font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
   padding: 20px;
@@ -68,7 +67,7 @@ img {
   font-weight: 400;
   font-weight: 700;
   line-height: 1;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .units {
   position: relative;
@@ -90,12 +89,12 @@ img {
   box-shadow: 5px 10px 10px #f1ecec;
   border-radius: 5px;
 }
-.forecast {
-  margin-top: 50px;
+.Forecast {
+  margin-top: 30px;
   text-align: center;
-  box-shadow: 5px 10px 10px #f1ecec;
   padding-bottom: 15px;
   font-size: 16px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 .forecast-temperature-max,
 .data {
@@ -109,10 +108,19 @@ img {
 }
 
 @media only screen and (max-width: 800px) {
-  .SearchForm {
-    max-width: 500px;
-  }
   .weather-app {
     max-width: 500px;
+  }
+  .Forecast {
+    margin-top: 0;
+  }
+  .temperature-container {
+    margin-top: 20px;
+  }
+  .Footer {
+    padding-bottom: 20px;
+  }
+  .row {
+    margin-top: 20px;
   }
 }
