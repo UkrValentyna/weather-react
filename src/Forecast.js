@@ -1,5 +1,6 @@
 import React from "react";
 import ReactAnimatedWeather from "react-animated-weather";
+import Icon from "./Icon";
 
 export default function Forecast() {
   return (
