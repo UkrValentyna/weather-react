@@ -1,12 +1,13 @@
 import React from "react";
 
+import Icon from "./Icon";
+
 export default function WeatherInCity() {
   let WeatherData = {
     temperature: 23,
     city: "London",
     date: "Sunday 10:05",
-    description: "Cloudy",
-    imgUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
+    description: "Sunny",
     humidity: 70,
     wind: 8,
   };
@@ -37,7 +38,7 @@ export default function WeatherInCity() {
           <div className="col-sm-6">
             <span className="temperature-container">
               <div className="temperature-container d-flex justify-content-end">
-                <img src={WeatherData.imgUrl} alt="sunny" className="big-img" />
+                <Icon />
                 <span className="temperature">{WeatherData.temperature}</span>
                 <span className="units">°C</span>
               </div>
